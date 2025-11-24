@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: xd009642/tarpaulin
-      options: --security-opt seccomp=undefined
+      options: --security-opt seccomp=unconfined
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
